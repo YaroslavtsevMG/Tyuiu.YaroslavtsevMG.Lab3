@@ -58,10 +58,20 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
             }
             Console.CursorLeft = 0;
             Console.CursorTop = 6;
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine($"{a} + {b} = {Calculate.CalculateSumma(a, b)}");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine($"{a} - {b} = {Calculate.CalculateDifference(a, b)}");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine($"{a} * {b} = {Calculate.CalculateMultiplication(a, b)}");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine($"{a} / {b} = {Calculate.CalculateQuotient(a, b)}");
+            Console.ResetColor();
             Console.CursorVisible = false;
             return this;
         }

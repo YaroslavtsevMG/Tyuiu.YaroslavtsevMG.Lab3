@@ -56,7 +56,7 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
         }
         private void RenderBody()
         {
-            Console.WriteLine("Выполняется функция рассчета 2 математического выражения...");
+            Console.WriteLine("Выполняется функция расчета 2 математического выражения...");
             Console.WriteLine("2*y+(2+3*a)/(10*x-3*a)+2*a+((a/y)/(3*a/x))");
             Console.WriteLine("");
             Console.ResetColor();
@@ -64,9 +64,9 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
             Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Для ввода данных нажмите Enter");
             Console.ResetColor();
-            Console.WriteLine("первый агрумент(x): ");
-            Console.WriteLine("второй агрумент(y): ");
-            Console.WriteLine("третий агрумент(a): ");
+            Console.WriteLine("первый аргумент(x): ");
+            Console.WriteLine("второй аргумент(y): ");
+            Console.WriteLine("третий аргумент(a): ");
             Console.WriteLine("Значение функции равно: ");
             Console.WriteLine("");
             Console.WriteLine("");
