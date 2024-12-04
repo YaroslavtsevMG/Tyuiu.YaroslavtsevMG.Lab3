@@ -97,7 +97,11 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
         }
         private void RenderBody()
         {
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Для ввода нажмите Enter");
+            Console.ResetColor();
             Console.WriteLine("Первый аргумент: ");
             Console.WriteLine("Первый аргумент: ");
             Console.WriteLine("Результат: ");

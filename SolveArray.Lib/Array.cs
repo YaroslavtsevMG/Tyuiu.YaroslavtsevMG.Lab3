@@ -14,9 +14,14 @@
         {
             return array.Average();
         }
-        public static float CalculateMedian(float[] array)
+        public static float CalculateMedian(float[] arrayx)
         {
             bool s = true;
+            var array = new float[arrayx.Length];
+            for(int i=0;i< arrayx.Length;i++)
+            {
+                array[i] = arrayx[i];
+            }
             int sortedEnd = 0;
             float box;
             while(s)

@@ -117,7 +117,11 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
             Console.WriteLine("Выполняется функция табулирования математического выражения...");
             Console.WriteLine("(1.0 + Sin(Sqrt(x * x + 1.0))) / (Cos((12.0 * x - 4.0)))");
             Console.WriteLine("");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Для ввода данных нажмите Enter");
+            Console.ResetColor();
             Console.WriteLine("начало интервала: ");
             Console.WriteLine("конец интервала: ");
             Console.WriteLine("");

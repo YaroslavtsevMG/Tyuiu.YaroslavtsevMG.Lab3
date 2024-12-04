@@ -56,6 +56,12 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
             }
             float[] arr = new float[N];
             var rand = new Random();
+            if(x1>x2)
+            {
+                var c = x1;
+                x1 = x2;
+                x2 = c;
+            }
             for(int i=0;i<N;i++)
             {
                 arr[i] = rand.Next(x1, x2);
@@ -90,6 +96,13 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
             Console.CursorLeft = 55;
             Console.CursorTop = 17;
             Console.Write(SolveArray.Lib.Array.SignsOfDivisibilityByTen(arr));
+            Console.Write("\n");
+            Console.Write("Первые 10 элементов массива: ");
+            for (int i=0;i<Math.Min(9,N-1);i++)
+            {
+                Console.Write(arr[i] + ", ");
+            }
+            Console.Write(arr[N-1]);
             Console.CursorVisible = false;
             return this;
         }
@@ -125,7 +138,11 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
         }
         private void RenderBody()
         {
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Для ввода нажмите Enter");
+            Console.ResetColor();
             Console.WriteLine("Количество элементов: ");
             Console.WriteLine("Минимальное значение: ");
             Console.WriteLine("Максимальное значение: ");

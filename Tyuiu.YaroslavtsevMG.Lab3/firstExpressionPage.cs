@@ -59,7 +59,11 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
             Console.WriteLine("Выполняется функция рассчета 1 математического выражения...");
             Console.WriteLine("6*y-(((a+3)/x)/((2-x*a)/(x*y)))+(2+3*a)/(10*x+3*a)+4*y");
             Console.WriteLine("");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Для вводв данных нажмите Enter");
+            Console.ResetColor();
             Console.WriteLine("первый агрумент(x): ");
             Console.WriteLine("второй агрумент(y): ");
             Console.WriteLine("третий агрумент(a): ");
