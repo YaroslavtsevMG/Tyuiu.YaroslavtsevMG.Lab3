@@ -53,20 +53,20 @@ namespace Tyuiu.YaroslavtsevMG.Lab3.Review.V26
             for (int i = 0; i < 10; i++)
             {
                 Console.Write("|   ");
-                if (Math.Round(a + i * ((double)(b - a) / 10), 2).ToString().Length > 5)
+                if (Math.Round(a + i * (((double)(b - a)) / 10), 2).ToString().Length > 5)
                 {
                     Console.CursorLeft = Console.CursorLeft - 1;
                 }
-                if (Math.Round(a + i * ((double)(b - a) / 10), 2).ToString().Length > 6)
+                if (Math.Round(a + i * (((double)(b - a)) / 10), 2).ToString().Length > 6)
                 {
                     Console.CursorLeft = Console.CursorLeft - 1;
                 }
-                if (Math.Round(a + i * ((double)(b - a) / 10), 2).ToString().Length > 7)
+                if (Math.Round(a + i * (((double)(b - a)) / 10), 2).ToString().Length > 7)
                 {
                     Console.CursorLeft = Console.CursorLeft - 1;
                 }
-                Console.Write(Math.Round(a + i * ((double)(b - a) / 10), 2));
-                for (int j = 0; j < 5 - Math.Round(a + i * ((double)(b - a) / 10), 2).ToString().Length; j++)
+                Console.Write(Math.Round(a + i * (((double)(b - a)) / 10), 2));
+                for (int j = 0; j < 5 - Math.Round(a + i * (((double)(b - a)) / 10), 2).ToString().Length; j++)
                 {
                     Console.Write(" ");
                 }
